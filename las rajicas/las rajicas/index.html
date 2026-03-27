@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2aa63c" />
+
+    <!-- SEO básico (local + intención de reserva) -->
+    <title>Las Rajicas | Bar-Restaurante en La Ñora (Murcia) · Reservas</title>
+    <meta
+      name="description"
+      content="Las Rajicas, bar-restaurante en La Ñora (Murcia). Cocina mediterránea con producto de calidad, ambiente acogedor y atención cercana. Reserva mesa o contacta al instante."
+    />
+    <meta
+      name="keywords"
+      content="restaurante en La Ñora, bar restaurante en La Ñora, comida en La Ñora, restaurante Murcia, reservar mesa La Ñora, tapas La Ñora"
+    />
+    <link rel="canonical" href="https://lasrajicas.es/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Las Rajicas · Bar-Restaurante en La Ñora (Murcia)" />
+    <meta
+      property="og:description"
+      content="Cocina mediterránea con personalidad. Producto cuidado, ambiente acogedor y un servicio cercano. Reserva tu mesa en Las Rajicas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Tipografías premium (display + texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Header sticky (se sombrea al hacer scroll) -->
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Principal">
+        <a class="brand" href="#top" aria-label="Las Rajicas (inicio)">
+          <span class="brand__mark" aria-hidden="true">
+            <img class="brand__logo" src="./assets/logo.png" alt="" width="44" height="44" decoding="async" />
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Las Rajicas</span>
+            <span class="brand__meta">Bar · Restaurante · La Ñora (Murcia)</span>
+          </span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-toggle
+        >
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="menu" data-menu>
+          <ul class="nav__links" role="list">
+            <li><a class="nav__link" href="#sobre">Sobre</a></li>
+            <li><a class="nav__link" href="#carta">Carta</a></li>
+            <li><a class="nav__link" href="#opiniones">Opiniones</a></li>
+            <li><a class="nav__link" href="#contacto">Contacto</a></li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--ghost" href="#carta">Ver carta</a>
+            <a class="btn btn--primary" href="#reservar" data-reserve-cta>Reservar</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO: primera impresión muy visual (fondo + overlay + claims + CTAs) -->
+      <section class="hero" id="top" aria-label="Presentación">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="container hero__content">
+          <div class="hero__grid">
+            <div class="hero__copy" data-reveal>
+              <p class="pill">
+                <span class="pill__dot" aria-hidden="true"></span>
+                Bar-restaurante en <strong>La Ñora, Murcia</strong> · Cocina mediterránea con personalidad
+              </p>
+
+              <h1 class="hero__title">
+                Donde el producto manda
+                <span class="hero__titleEm">y el ambiente invita a quedarse.</span>
+              </h1>
+
+              <p class="hero__subtitle">
+                Tapas y cocina mediterránea en <strong>La Ñora</strong>, con un local cuidado y un servicio rápido.
+                Ideal para tapear, cenar o venir en familia. Si vienes, lo normal es que repitas.
+              </p>
+
+              <div class="hero__actions">
+                <a class="btn btn--primary btn--lg" href="#reservar" data-reserve-cta>Reservar mesa</a>
+                <a class="btn btn--glass btn--lg" href="#carta">Descubrir la carta</a>
+              </div>
+
+              <!-- (bloque eliminando tiles/badges para que el inicio sea más limpio) -->
+            </div>
+
+            <!-- Tarjeta hero “premium”: horarios + micro-claims -->
+            <aside class="hero__card" aria-label="Información rápida" data-reveal>
+              <div class="heroCard__top">
+                <h2 class="heroCard__title">Reserva en 30 segundos</h2>
+                <p class="heroCard__lead">
+                  Confirma tu mesa por teléfono. Te atendemos rápido y con cariño.
+                </p>
+              </div>
+
+              <div class="heroCard__actions">
+                <a class="btn btn--dark" href="tel:+34968808768">
+                  <span class="btn__icon" aria-hidden="true">☎</span>
+                  Llamar
+                </a>
+                <a class="btn btn--ghost" href="#carta">Ver carta</a>
+              </div>
+
+              <div class="heroCard__meta">
+                <div class="metaRow">
+                  <span class="metaRow__k">Horario</span>
+                  <span class="metaRow__v">
+                    <strong>L–X:</strong> 7:30–16:00<br />
+                    <strong>J–V:</strong> 7:30–16:00 · 20:00–23:00<br />
+                    <strong>S:</strong> 8:30–16:00 · 20:00–23:00<br />
+                    <strong>D:</strong> Cerrado
+                  </span>
+                </div>
+                <div class="metaRow">
+                  <span class="metaRow__k">Dirección</span>
+                  <span class="metaRow__v">Av. Constitución · 30830 La Ñora (Murcia)</span>
+                </div>
+                <p class="heroCard__note">
+                  <strong>Reservas:</strong> recomendamos llamar si vienes hoy.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="hero__scrollHint" aria-hidden="true">
+          <span class="scrollHint__line"></span>
+          <span class="scrollHint__text">Desliza</span>
+        </div>
+      </section>
+
+      <!-- Sobre nosotros -->
+      <section class="section" id="sobre" aria-label="Sobre Las Rajicas">
+        <div class="container split">
+          <div class="split__media" data-reveal>
+            <div class="mediaCard">
+              <img
+                class="mediaCard__img"
+                src="./assets/local-barra.png"
+                alt="Barra de Las Rajicas"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="800"
+              />
+              <div class="mediaCard__badge">
+                <span class="badge">
+                  <span class="badge__k">Cocina</span>
+                  <span class="badge__v">Mediterránea · mercado</span>
+                </span>
+                <span class="badge">
+                  <span class="badge__k">Estilo</span>
+                  <span class="badge__v">Tradición + modernidad</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="split__content" data-reveal>
+            <header class="sectionHead">
+              <p class="sectionHead__eyebrow">Las Rajicas</p>
+              <h2 class="sectionHead__title">Tapear bien, comer mejor. Sin complicaciones.</h2>
+              <p class="sectionHead__subtitle">
+                En La Ñora, con cocina mediterránea y ese punto de casa que apetece repetir: buen producto, platos
+                reconocibles y un ambiente cuidado.
+              </p>
+            </header>
+
+            <div class="prose">
+              <p>
+                Aquí se viene a lo importante: <strong>comer rico</strong> y estar a gusto. Tapas para compartir, platos
+                de cocina y un servicio que recomienda sin marear.
+              </p>
+              <p>
+                Si te apetece un sitio bonito y fiable para una cena tranquila o un tapeo con amigos, aquí lo tienes.
+              </p>
+            </div>
+
+            <div class="highlights">
+              <div class="highlight">
+                <span class="highlight__icon" aria-hidden="true">⟡</span>
+                <div>
+                  <p class="highlight__title">Producto sin atajos</p>
+                  <p class="highlight__text">Selección diaria y respeto máximo al sabor.</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon" aria-hidden="true">⟡</span>
+                <div>
+                  <p class="highlight__title">Ambiente cuidado</p>
+                  <p class="highlight__text">Luz cálida, detalles limpios y mesas cómodas.</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon" aria-hidden="true">⟡</span>
+                <div>
+                  <p class="highlight__title">Servicio cercano</p>
+                  <p class="highlight__text">Recomendaciones claras, trato humano y profesional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carta / platos destacados -->
+      <section class="section" id="carta" aria-label="Carta y platos destacados">
+        <div class="container">
+          <header class="sectionHead" data-reveal>
+            <p class="sectionHead__eyebrow">Carta</p>
+            <h2 class="sectionHead__title">La carta, completa y clara.</h2>
+            <p class="sectionHead__subtitle">
+              En algunos móviles el visor puede tardar. Si te va mejor, descárgala o ábrela online.
+            </p>
+          </header>
+
+          <div class="menuCallout" data-reveal>
+            <div>
+              <h3 class="menuCallout__title">Carta en PDF</h3>
+              <p class="menuCallout__text">
+                Si quieres verla completa con calma, aquí la tienes. También puedes abrir el menú online.
+              </p>
+            </div>
+            <div class="menuCallout__actions">
+              <a class="btn btn--primary" href="./assets/carta-las-rajicas.pdf" target="_blank" rel="noreferrer">Ver PDF</a>
+              <a class="btn btn--ghost" href="https://carta.menu/restaurants/murcia/las-rajicas/menu" target="_blank" rel="noreferrer">Menú online</a>
+            </div>
+          </div>
+
+          <div class="menuPdf" data-reveal>
+            <iframe class="menuPdf__frame" title="Carta en PDF — Las Rajicas" src="./assets/carta-las-rajicas.pdf"></iframe>
+          </div>
+
+          <header class="sectionHead" style="margin-top: 26px" data-reveal>
+            <p class="sectionHead__eyebrow">Recomendados</p>
+            <h3 class="sectionHead__title" style="font-size: clamp(24px, 3.2vw, 32px)">Lo que más suele gustar.</h3>
+            <p class="sectionHead__subtitle">
+              Selección basada en lo que más se menciona en reseñas: pulpo, croquetas, hamburguesa, pluma y postres.
+            </p>
+          </header>
+
+          <div class="menuGrid">
+            <article class="dishCard" data-reveal>
+              <div class="dishCard__media">
+                <img
+                  src="./assets/croquetas.jpg"
+                  alt="Croquetas servidas"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="800"
+                />
+                <span class="dishCard__tag">Aperitivos</span>
+              </div>
+              <div class="dishCard__body">
+                <h3 class="dishCard__title">Croqueta de chipirón</h3>
+                <p class="dishCard__text">“La croqueta de chipirón y el pulpo a la plancha muy buenos.”</p>
+                <div class="dishCard__foot">
+                  <span class="hint"><strong>Precio:</strong> ver en carta</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="dishCard" data-reveal>
+              <div class="dishCard__media">
+                <img src="./assets/plato-pulpo.png" alt="Pulpo a la plancha" loading="lazy" decoding="async" width="1200" height="800" />
+                <span class="dishCard__tag">Mar</span>
+              </div>
+              <div class="dishCard__body">
+                <h3 class="dishCard__title">Pulpo a la plancha (sobre puré)</h3>
+                <p class="dishCard__text">“La croqueta de chipirón y el pulpo a la plancha muy buenos.”</p>
+                <div class="dishCard__foot">
+                  <span class="hint"><strong>Precio:</strong> ver en carta</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="dishCard" data-reveal>
+              <div class="dishCard__media">
+                <img src="./assets/galeria-4.jpg" alt="Hamburguesa servida" loading="lazy" decoding="async" width="1200" height="800" />
+                <span class="dishCard__tag">Sándwiches</span>
+              </div>
+              <div class="dishCard__body">
+                <h3 class="dishCard__title">Hamburguesa de ternera con queso Idiazábal</h3>
+                <p class="dishCard__text">“La hamburguesa de ternera con queso Idiazabal, un 10.”</p>
+                <div class="dishCard__foot">
+                  <span class="hint"><strong>Precio:</strong> ver en carta</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="menuCallout" data-reveal>
+            <div>
+              <h3 class="menuCallout__title">¿Mesa para hoy?</h3>
+              <p class="menuCallout__text">Llama y te confirmamos al momento.</p>
+            </div>
+            <div class="menuCallout__actions">
+              <a class="btn btn--dark" href="tel:+34968808768">Llamar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opiniones -->
+      <section class="section" id="opiniones" aria-label="Opiniones de clientes">
+        <div class="container">
+          <header class="sectionHead sectionHead--center" data-reveal>
+            <p class="sectionHead__eyebrow">Prueba social</p>
+            <h2 class="sectionHead__title">Quien viene, repite.</h2>
+            <p class="sectionHead__subtitle">
+              Buen ambiente, tapas de calidad y servicio cercano: eso es lo que más se repite.
+            </p>
+          </header>
+
+          <div class="testimonials">
+            <article class="tCard" data-reveal>
+              <header class="tCard__head">
+                <p class="tCard__name">Reseñas</p>
+                <p class="tCard__stars" aria-label="5 sobre 5">★★★★★</p>
+              </header>
+              <p class="tCard__text">
+                “Todo excelente: comida, servicio y ambiente. Recomendable si quieres tapear bien en La Ñora.”
+              </p>
+              <p class="tCard__meta">Clientes · Google</p>
+            </article>
+
+            <article class="tCard" data-reveal>
+              <header class="tCard__head">
+                <p class="tCard__name">Reseñas</p>
+                <p class="tCard__stars" aria-label="5 sobre 5">★★★★★</p>
+              </header>
+              <p class="tCard__text">
+                “Servicio rápido y muy buena relación calidad‑precio. El pulpo y las croquetas, de lo mejor.”
+              </p>
+              <p class="tCard__meta">Clientes · Murcia</p>
+            </article>
+          </div>
+
+          <div class="ratingBar" data-reveal>
+            <div class="ratingBar__left">
+              <p class="ratingBar__big">
+                <strong>4,8</strong> <span class="ratingBar__stars" aria-hidden="true">★★★★★</span>
+              </p>
+              <p class="ratingBar__small">Media estimada · Sustituir por dato real</p>
+            </div>
+            <div class="ratingBar__right">
+              <a class="btn btn--ghost" href="#contacto">Preguntar disponibilidad</a>
+              <a class="btn btn--primary" href="#reservar" data-reserve-cta>Reservar mesa</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA fuerte -->
+      <section class="ctaBand" id="reservar" aria-label="Reserva">
+        <div class="container ctaBand__inner" data-reveal>
+          <div class="ctaBand__copy">
+            <h2 class="ctaBand__title">Tu mesa lista. Tu plan, mejor.</h2>
+            <p class="ctaBand__text">
+              Reserva ahora y ven a disfrutar de una cocina mediterránea cuidada en La Ñora. Te atendemos rápido por
+              teléfono.
+            </p>
+          </div>
+          <div class="ctaBand__actions">
+            <a class="btn btn--dark btn--lg" href="tel:+34968808768">Llamar para reservar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section" id="contacto" aria-label="Contacto">
+        <div class="container contact">
+          <header class="sectionHead" data-reveal>
+            <p class="sectionHead__eyebrow">Contacto</p>
+            <h2 class="sectionHead__title">Estamos en La Ñora, a un paso de Murcia.</h2>
+            <p class="sectionHead__subtitle">
+              Para reservas, lo más rápido es teléfono. Si necesitas información, te atendemos encantados.
+            </p>
+          </header>
+
+          <div class="contactGrid">
+            <div class="contactCard" data-reveal>
+              <h3 class="contactCard__title">Datos</h3>
+
+              <div class="infoList">
+                <div class="infoRow">
+                  <span class="infoRow__k">Dirección</span>
+                  <span class="infoRow__v">Avenida Constitución · 30830 La Ñora, Murcia</span>
+                </div>
+                <div class="infoRow">
+                  <span class="infoRow__k">Teléfono</span>
+                  <span class="infoRow__v"><a class="link" href="tel:+34968808768">+34 968 808 768</a></span>
+                </div>
+                <div class="infoRow">
+                  <span class="infoRow__k">Horario</span>
+                  <span class="infoRow__v">
+                    <strong>Jueves</strong> 7:30–16:00 · 20:00–23:00<br />
+                    <strong>Viernes</strong> 7:30–16:00 · 20:00–23:00<br />
+                    <strong>Sábado</strong> 8:30–16:00 · 20:00–23:00<br />
+                    <strong>Domingo</strong> Cerrado<br />
+                    <strong>Lunes</strong> 7:30–16:00<br />
+                    <strong>Martes</strong> 7:30–16:00<br />
+                    <strong>Miércoles</strong> 7:30–16:00
+                  </span>
+                </div>
+              </div>
+
+              <div class="contactCard__actions">
+                <a class="btn btn--primary" href="#reservar" data-reserve-cta>Reservar mesa</a>
+                <a class="btn btn--ghost" href="#carta">Ver carta</a>
+              </div>
+            </div>
+
+            <div class="mapCard" data-reveal>
+              <div class="mapCard__top">
+                <h3 class="mapCard__title">Cómo llegar</h3>
+                <p class="mapCard__text">
+                  Nuestra ubicación en Google Maps.
+                </p>
+              </div>
+              <div class="mapCard__frame" aria-label="Mapa">
+                <iframe
+                  title="Ubicación — Las Rajicas"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.4692131877105!2d-1.1982259240707553!3d37.9895146997611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63801437bc6313%3A0x9ad53e51660d6718!2sLas%20Rajicas!5e0!3m2!1ses!2ses!4v1774540832592!5m2!1ses!2ses"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botones flotantes (móvil-first): solo llamada -->
+    <div class="floatActions" aria-label="Acciones rápidas">
+      <a class="floatBtn floatBtn--reserve" href="tel:+34968808768">
+        <span class="floatBtn__icon" aria-hidden="true">☎</span>
+        Llamar
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Pie de página">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <p class="footer__name">Las Rajicas</p>
+          <p class="footer__desc">Bar-restaurante en La Ñora, Murcia. Cocina mediterránea con carácter y trato cercano.</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__title">Enlaces</p>
+          <ul class="footer__links" role="list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__title">Contacto</p>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+34968808768">+34 968 808 768</a></li>
+            <li><span class="muted">La Ñora · Murcia</span></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__title">Redes</p>
+          <ul class="footer__links" role="list">
+            <li><a href="#" aria-label="Instagram (placeholder)">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook (placeholder)">Facebook</a></li>
+            <li><a href="#" aria-label="Google (placeholder)">Google</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p class="footer__small">© <span data-year></span> Las Rajicas. Todos los derechos reservados.</p>
+        <p class="footer__small">
+          Diseñado para convertir: marca clara, carta visual y CTA directo.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lightbox (galería) -->
+    <div class="lightbox" hidden data-lightbox aria-label="Visor de imagen" role="dialog" aria-modal="true">
+      <button class="lightbox__close" type="button" aria-label="Cerrar" data-lightbox-close>×</button>
+      <img class="lightbox__img" alt="" data-lightbox-img />
+      <div class="lightbox__shade" data-lightbox-close aria-hidden="true"></div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
